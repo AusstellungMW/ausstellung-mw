@@ -5,10 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vergangenheit & Gegenwart</title>
   <style>
+    @font-face {
+      font-family: 'Milo Serif Offc';
+      src: url('MiloSerifOffc.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Milo Serif Offc', serif;
       background-color: #f7f7f7;
       color: #333;
       text-align: center;
@@ -20,7 +27,16 @@
 
     .header h1 {
       font-size: 36px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+    }
+
+    .subtext {
+      font-size: 18px;
+      color: #555;
+      font-weight: normal;
+      margin: 5px auto;
+      max-width: 800px;
+      line-height: 1.5;
     }
 
     .header img {
@@ -28,6 +44,7 @@
       height: auto;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-top: 20px;
     }
 
     .pair-section {
@@ -96,15 +113,46 @@
 </head>
 <body>
   <div class="header">
-  <h1>Campestraße früher vs. heute - eine Fotoausstellung</h1>
-  <img src="header.jpg" alt="Titelbild">
-  <p style="max-width: 800px; margin: 20px auto 0; font-size: 18px; line-height: 1.5;">
-    Die Museums-AG mit dem Gymnasium im Schloss Wolfenbüttel und Michelle Grimke die Museumspädagogin des Museums Wolfenbüttel.
-  </p>
-  <p style="max-width: 800px; margin: 10px auto 0; font-size: 18px; line-height: 1.5;">
-   
-  </p>
-</div>
+    <h1>Campestraße früher vs. heute – eine Fotoausstellung</h1>
+    <p class="subtext">Die Museums-AG mit dem Gymnasium im Schloss Wolfenbüttel und Michelle Grimke, die Museumspädagogin des Museums Wolfenbüttel.</p>
+    <p class="subtext">Eine fotografische Reise durch Vergangenheit und Gegenwart einer Straße im Wandel der Zeit.</p>
+    <img src="header.jpg" alt="Titelbild">
+  </div>
+
+  <!-- остальная галерея остаётся без изменений, она у тебя уже отличная -->
+
+  <!-- модальное окно -->
+  <div id="imgModal" class="modal">
+    <img class="modal-content" id="modalImg">
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const modalCaption = document.getElementById("modalCaption");
+
+    document.querySelectorAll(".pair img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        modalCaption.textContent = img.getAttribute("data-caption") || img.alt || '';
+      });
+    });
+
+    modal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
+
 
 
   <div class="pair-section">
