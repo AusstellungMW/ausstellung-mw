@@ -112,20 +112,22 @@
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Campestraße früher vs. heute – eine Fotoausstellung</h1>
-    <p class="subtext">Die Museums-AG mit dem Gymnasium im Schloss Wolfenbüttel und Michelle Grimke, die Museumspädagogin des Museums Wolfenbüttel.</p>
-    <p class="subtext">Eine fotografische Reise durch Vergangenheit und Gegenwart einer Straße im Wandel der Zeit.</p>
-    <img src="header.jpg" alt="Titelbild">
-  </div>
+ <div class="header">
+  <h1>Campestraße früher vs. heute – eine Fotoausstellung</h1>
 
-  <!-- остальная галерея остаётся без изменений, она у тебя уже отличная -->
+  <!-- Подзаголовок (под h1, но над фото) -->
+  <p class="subtext">Eine fotografische Reise durch Vergangenheit und Gegenwart.</p>
+  <p class="subtext">Gestaltet von Schüler:innen und dem Museumsteam mit viel Engagement.</p>
 
-  <!-- модальное окно -->
-  <div id="imgModal" class="modal">
-    <img class="modal-content" id="modalImg">
-    <div class="modal-caption" id="modalCaption"></div>
-  </div>
+  <!-- Фото -->
+  <img src="header.jpg" alt="Titelbild">
+
+  <!-- Сохраняем предложение под фото -->
+  <p class="subtext" style="margin-top: 20px;">
+    Die Museums-AG mit dem Gymnasium im Schloss Wolfenbüttel und Michelle Grimke, die Museumspädagogin des Museums Wolfenbüttel.
+  </p>
+</div>
+
 
   <script>
     const modal = document.getElementById("imgModal");
