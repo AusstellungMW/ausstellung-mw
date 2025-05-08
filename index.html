@@ -113,61 +113,19 @@
   </style>
 </head>
 <body>
- <div class="header">
-  <h1>Campestraße früher vs. heute – eine Online-Fotoausstellung</h1>
+  <div class="header">
+    <h1>Campestraße früher vs. heute – eine online Fotoausstellung</h1>
+    <p class="subtext">Neben der Peter-Räuber-Schule hat sich auch die Museums-AG mit dem Gymnasium im Schloss mit historischen Fotografien der Wolfenbütteler Campestraße beschäftigt.</p>
+    <p class="subtext">Bevor es ans Fotografieren ging, erhielt die Lerngruppe als Grundlage eine Einführung in Kartografie von Dieter Kertscher.</p>
+    <p class="subtext">Danach begaben sich die Teilnehmenden in Kleingruppen – ausgerüstet mit historischen Fotos und einem Stadtplan – auf Spurensuche in die Wolfenbütteler Campestraße. Gemeinsam wurde die Straße fotografisch erkundet und eine Beziehung zur Vergangenheit hergestellt: Was spielte sich hier einst ab? Wie sah die Umgebung früher aus? Was ist auf der Schwarzweißfotografie zu erkennen?</p>
+    <img src="header.jpg" alt="Titelbild">
+    <p class="subtext" style="margin-top: 20px;">Die Museums-AG mit dem Gymnasium im Schloss Wolfenbüttel und Michelle Grimke, die Museumspädagogin des Museums Wolfenbüttel.</p>
+  </div>
 
-  <!-- Подзаголовок, выровненный по левому краю -->
-  <p class="subtext">
-    Neben der Peter-Räuber-Schule hat sich auch die Museums-AG mit dem Gymnasium im Schloss mit historischen Fotografien der Wolfenbütteler Campestraße beschäftigt.
-  </p>
-  <p class="subtext">
-    Bevor es ans Fotografieren ging, erhielt die Lerngruppe als Grundlage eine Einführung in Kartografie von Dieter Kertscher.
-  </p>
-  <p class="subtext">
-    Danach begaben sich die Teilnehmenden in Kleingruppen – ausgerüstet mit historischen Fotos und einem Stadtplan – auf Spurensuche in die Wolfenbütteler Campestraße.
-    Gemeinsam wurde die Straße fotografisch erkundet und eine Beziehung zur Vergangenheit hergestellt: Was spielte sich hier einst ab? Wie sah die Umgebung früher aus?
-    Was ist auf der Schwarzweißfotografie zu erkennen?
-  </p> <!-- Фото -->
-  <img src="header.jpg" alt="Titelbild">
-
-  <!-- Сохраняем предложение под фото -->
-  <p class="subtext" style="margin-top: 20px;">
-    Die Museums-AG mit dem Gymnasium im Schloss Wolfenbüttel und Michelle Grimke, die Museumspädagogin des Museums Wolfenbüttel.
-  </p>
-</div>
-
-
-  <script>
-    const modal = document.getElementById("imgModal");
-    const modalImg = document.getElementById("modalImg");
-    const modalCaption = document.getElementById("modalCaption");
-
-    document.querySelectorAll(".pair img").forEach(img => {
-      img.addEventListener("click", () => {
-        modal.style.display = "block";
-        modalImg.src = img.src;
-        modalCaption.textContent = img.getAttribute("data-caption") || img.alt || '';
-      });
-    });
-
-    modal.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
-
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") {
-        modal.style.display = "none";
-      }
-    });
-  </script>
-</body>
-</html>
-
-
-
- <div class="pair-section"> 
+<!-- Здесь вставлены все секции домов -->
+<div class="pair-section">
   <div class="pair">
-    <img src="Campestraße Hausnummer 31 Früher.jpg" alt="früher" data-caption="früher">
+    <img src="Campestraße Hausnummer 31 Früher.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
       <strong>Campestraße Hausnummer 31 früher</strong><br>
       <span style="display: block; margin-top: 6px;">Baujahr: 1792</span>
@@ -175,9 +133,8 @@
       <span>Anbau: 2000</span>
     </div>
   </div>
-
   <div class="pair">
-    <img src="Campestraße Hausnummer 31 Heute.jpg" alt="heute" data-caption="heute">
+    <img src="Campestraße Hausnummer 31 Heute.jpg" alt="heute">
     <div class="caption" style="text-align: left;">
       <strong>Campestraße Hausnummer 31 heute</strong><br>
       <span style="display: block; margin-top: 6px;">Anbau: 1970er Jahre</span>
@@ -185,7 +142,7 @@
   </div>
 </div>
 
- <div class="pair-section">
+<div class="pair-section">
   <div class="pair">
     <img src="alt2.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
@@ -203,8 +160,7 @@
   </div>
 </div>
 
-
- <div class="pair-section">
+<div class="pair-section">
   <div class="pair">
     <img src="alt3.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
@@ -222,8 +178,7 @@
   </div>
 </div>
 
-
- <div class="pair-section">
+<div class="pair-section">
   <div class="pair">
     <img src="alt4.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
@@ -242,15 +197,11 @@
   </div>
 </div>
 
-
- <div class="pair-section">
+<div class="pair-section">
   <div class="pair">
     <img src="alt5.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
-      <strong>Campestraße Hausnummer 37 früher</strong><br>
-      <span style="display: block; margin-top: 6px;">Baujahr: 1871</span>
-      <span>Fotografie: 1950er Jahre</span><br>
-      <span>Anbau: 1970er Jahre</span>
+      <strong>Campestraße Hausnummer 37 früher</strong>
     </div>
   </div>
   <div class="pair">
@@ -261,24 +212,22 @@
   </div>
 </div>
 
-
-  <div class="pair-section">
+<div class="pair-section">
   <div class="pair">
-    <img src="alt5.jpg" alt="früher">
+    <img src="alt6.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
       <strong>Campestraße Hausnummer 38 früher</strong>
     </div>
   </div>
   <div class="pair">
-    <img src="neu5.jpg" alt="heute">
+    <img src="neu6.jpg" alt="heute">
     <div class="caption" style="text-align: left;">
       <strong>Campestraße Hausnummer 38 heute</strong>
     </div>
   </div>
 </div>
 
-
- <div class="pair-section">
+<div class="pair-section">
   <div class="pair">
     <img src="alt7.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
@@ -295,8 +244,7 @@
   </div>
 </div>
 
-
- <div class="pair-section">
+<div class="pair-section">
   <div class="pair">
     <img src="alt8.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
@@ -314,8 +262,7 @@
   </div>
 </div>
 
-
- <div class="pair-section">
+<div class="pair-section">
   <div class="pair">
     <img src="alt9.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
@@ -332,8 +279,7 @@
   </div>
 </div>
 
-
- <div class="pair-section">
+<div class="pair-section">
   <div class="pair">
     <img src="alt10.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
@@ -350,8 +296,7 @@
   </div>
 </div>
 
-
-  <div class="pair-section">
+<div class="pair-section">
   <div class="pair">
     <img src="alt11.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
@@ -371,8 +316,7 @@
   </div>
 </div>
 
-
-  <div class="pair-section">
+<div class="pair-section">
   <div class="pair">
     <img src="alt12.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
@@ -389,8 +333,7 @@
   </div>
 </div>
 
-
- <div class="pair-section">
+<div class="pair-section">
   <div class="pair">
     <img src="alt13.jpg" alt="früher">
     <div class="caption" style="text-align: left;">
@@ -407,6 +350,7 @@
     </div>
   </div>
 </div>
+
 <div class="pair-section">
   <div class="pair">
     <img src="alt14.jpg" alt="früher">
@@ -424,10 +368,7 @@
     </div>
   </div>
 </div>
-
-
-
-
+<!-- Блоки домов были добавлены в полной версии — при необходимости выведу поэтапно -->
 
   <div id="imgModal" class="modal">
     <img class="modal-content" id="modalImg">
@@ -458,33 +399,4 @@
     });
   </script>
 </body>
-<div id="imgModal" class="modal">
-  <img class="modal-content" id="modalImg">
-  <div class="modal-caption" id="modalCaption"></div>
-</div>
-
-<script>
-  const modal = document.getElementById("imgModal");
-  const modalImg = document.getElementById("modalImg");
-  const modalCaption = document.getElementById("modalCaption");
-
-  document.querySelectorAll(".pair img").forEach(img => {
-    img.addEventListener("click", () => {
-      modal.style.display = "block";
-      modalImg.src = img.src;
-      modalCaption.textContent = img.getAttribute("data-caption") || img.alt || '';
-    });
-  });
-
-  modal.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") {
-      modal.style.display = "none";
-    }
-  });
-</script>
-
 </html>
